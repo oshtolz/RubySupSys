@@ -1,0 +1,27 @@
+Start chart generation by entering in terminal (where * -  name of used file):
+ruby rb/*_chart.rb *.csv
+
+For multiple generation:
+ruby rb/*_chart.rb *.csv & ruby rb/*_chart.rb *.csv & ruby rb/*_chart.rb *.csv & ruby rb/*_chart.rb *.csv & ruby rb/*_chart.rb *.csv
+
+AZN:
+ruby rb/open_chart.rb AZN.csv & ruby rb/close_chart.rb AZN.csv & ruby rb/high_chart.rb AZN.csv & ruby rb/low_chart.rb AZN.csv & ruby rb/line_chart.rb AZN.csv
+
+CSIOY:
+ruby rb/open_chart.rb CSIOY.csv & ruby rb/close_chart.rb CSIOY.csv & ruby rb/high_chart.rb CSIOY.csv & ruby rb/low_chart.rb CSIOY.csv & ruby rb/line_chart.rb CSIOY.csv
+
+CSIQ:
+ruby rb/open_chart.rb CSIQ.csv & ruby rb/close_chart.rb CSIQ.csv & ruby rb/high_chart.rb CSIQ.csv & ruby rb/low_chart.rb CSIQ.csv & ruby rb/line_chart.rb CSIQ.csv
+
+DEO:
+ruby rb/open_chart.rb DEO.csv & ruby rb/close_chart.rb DEO.csv & ruby rb/high_chart.rb DEO.csv & ruby rb/low_chart.rb DEO.csv & ruby rb/line_chart.rb DEO.csv
+
+ITUB:
+ruby rb/open_chart.rb ITUB.csv & ruby rb/close_chart.rb ITUB.csv & ruby rb/high_chart.rb ITUB.csv & ruby rb/low_chart.rb ITUB.csv & ruby rb/line_chart.rb ITUB.csv
+
+Edit code in to_volume.rb and volume_chart.rb by repositioning comments "=begin...=end" under "# Exclude / Include ITUB"
+to generate volumes_small.csv (without ITUB) or volumes.csv (with ITUB):
+ruby rb/to_volume.rb
+
+Generate chart of Volumes:
+ruby rb/volume_chart.rb
