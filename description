@@ -13,11 +13,14 @@ ruby rb/open_chart.rb CSIOY.csv & ruby rb/close_chart.rb CSIOY.csv & ruby rb/hig
 CSIQ:
 ruby rb/open_chart.rb CSIQ.csv & ruby rb/close_chart.rb CSIQ.csv & ruby rb/high_chart.rb CSIQ.csv & ruby rb/low_chart.rb CSIQ.csv & ruby rb/line_chart.rb CSIQ.csv
 
-DEO:
-ruby rb/open_chart.rb DEO.csv & ruby rb/close_chart.rb DEO.csv & ruby rb/high_chart.rb DEO.csv & ruby rb/low_chart.rb DEO.csv & ruby rb/line_chart.rb DEO.csv
+GOOD:
+ruby rb/open_chart.rb GOOD.csv & ruby rb/close_chart.rb GOOD.csv & ruby rb/high_chart.rb GOOD.csv & ruby rb/low_chart.rb GOOD.csv & ruby rb/line_chart.rb GOOD.csv
 
 ITUB:
 ruby rb/open_chart.rb ITUB.csv & ruby rb/close_chart.rb ITUB.csv & ruby rb/high_chart.rb ITUB.csv & ruby rb/low_chart.rb ITUB.csv & ruby rb/line_chart.rb ITUB.csv
+
+TJX:
+ruby rb/open_chart.rb TJX.csv & ruby rb/close_chart.rb TJX.csv & ruby rb/high_chart.rb TJX.csv & ruby rb/low_chart.rb TJX.csv & ruby rb/line_chart.rb TJX.csv
 
 Edit code in to_volume.rb and volume_chart.rb by repositioning comments "=begin...=end" under "# Exclude / Include ITUB"
 to generate volumes_small.csv (without ITUB) or volumes.csv (with ITUB):
@@ -25,3 +28,6 @@ ruby rb/to_volume.rb
 
 Generate chart of Volumes:
 ruby rb/volume_chart.rb
+
+Install Rake and run all project by command:
+rake standart_visualisation CSV_FILE=AZN.csv && rake standart_visualisation CSV_FILE=CSIOY.csv && rake standart_visualisation CSV_FILE=CSIQ.csv && rake standart_visualisation CSV_FILE=GOOD.csv && rake standart_visualisation CSV_FILE=ITUB.csv && rake standart_visualisation CSV_FILE=TJX.csv && rake extended_visualisation 
